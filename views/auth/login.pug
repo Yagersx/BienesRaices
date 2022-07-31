@@ -1,0 +1,19 @@
+extends ../layout/index
+
+block content
+    div.text-center
+        h1(class="text-4xl my-10 font-extrabold") Bienes 
+            span(class="font-normal") Raices
+        h2(class="text-center text-2xl font-sans")=pageTitle
+
+        div.mt-8.mx-auto.max-w-md
+            div.bg-white.py-8.px-4.shadow
+                form(action="post" method="method" class="space-y-5")
+                    div 
+                        label(for="email" class="block text-sn uppercase mb-2 text-gray-500 font-bold") Escribe tu email
+                        input(id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400" placeholder="Ejemplo: Irving..." type="email")
+                    div 
+                        label(for="password" class="block text-sn uppercase mb-2 text-gray-500 font-bold") Escribe tu password
+                        input(id="password" name="password" class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400" placeholder="Ejemplo: Irving..." type="password")
+                    
+                    input(class="w-full bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Iniciar Sesión")
